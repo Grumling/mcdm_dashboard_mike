@@ -1,35 +1,15 @@
 :root {
-
-  /* Global Variables */
-  --main-color: lightblue;
-
-  /* Component Specific Variables */
-  --box-color: #fff;
-
-  /* Navigation */
-  --navigation-background-color: rgb(0, 0, 0);
-  --navigation-logo-background-color: rgb(255, 255, 255);
-  --navigation-color: rgb(255, 255, 255);
+  --primary-backgorund: #111015;
+  --secondary-backgorund: #1a1a1c;
+  --primary-text: #f2eee8;
 }
 
-
 @media (prefers-color-scheme: dark) {
-
   :root {
-    
-    /* Global Variables */
-    --main-color: #333;
-
-
-    /* Component Specific Variables */
-    --box-color: rgb(235, 235, 160);
-
-    /* Navigation */
-    --navigation-background-color: rgb(235, 235, 160);
-    --navigation-logo-background-color: rgb(255, 255, 255);
-    --navigation-color: rgb(0, 0, 0);
+    --primary-backgorund: #111015;
+    --secondary-backgorund: #1a1a1c;
+    --primary-text: #f2eee8;
   }
-
 }
 
 * {
@@ -40,12 +20,12 @@
 
 html,
 body {
-  background-color: var(--main-color);
+  background-color: var(--primary-backgorund);
   height: 100%;
 }
 
 body {
-  background-color: var(--main-color);
+  background-color: var(--primary-backgorund);
 }
 
 a {
@@ -53,7 +33,10 @@ a {
   text-decoration: underline;
 }
 
-
+ul,
+li {
+  list-style: none;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

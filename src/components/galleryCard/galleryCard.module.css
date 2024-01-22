@@ -1,0 +1,10 @@
+.galleryCard {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.galleryCard img {
+  width: 100%;
+  border-radius: 15px;
+}

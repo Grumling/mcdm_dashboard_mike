@@ -1,0 +1,14 @@
+.container {
+  background-color: var(--secondary-backgorund);
+  /* ----- */
+  width: auto;
+  height: auto;
+  float: right;
+  /* ----- */
+  padding: 20px 35px;
+  border-radius: 15px;
+  /* ---- */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

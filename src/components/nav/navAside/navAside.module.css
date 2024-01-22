@@ -1,0 +1,28 @@
+.container {
+  background-color: var(--secondary-backgorund);
+  color: var(--primary-text);
+  /* ----- */
+  float: left;
+  min-width: 15%;
+  height: auto;
+  margin-top: 20px;
+  margin-right: 20px;
+  /* ----- */
+  border-radius: 15px;
+  padding: 20px 35px;
+  /* ----- */
+  display: flex;
+  flex-direction: row;
+  /* ----- */
+}
+
+.container li {
+  margin: 20px 0;
+  /* ----- */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.container li {
+  list-style-type: none;
+}
