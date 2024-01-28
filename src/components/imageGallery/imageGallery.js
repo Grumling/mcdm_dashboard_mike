@@ -29,7 +29,7 @@ const ImageGallery = ({ images }) => {
           )
         })
       )}
-      <button onClick={toggleView}>Toggle Slider</button>
+      {/* <button onClick={toggleView}>Toggle Slider</button> */}
     </section>
   )
 }

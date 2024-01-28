@@ -10,3 +10,23 @@
   height: auto;
   object-fit: contain; /* Resize the images to fill their box while preserving their aspect ratio */
 }
+
+.sliderControlsContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.buttonStyle {
+  background-color: lightslategray;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
