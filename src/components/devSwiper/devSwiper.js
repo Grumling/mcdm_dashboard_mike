@@ -3,16 +3,17 @@ import styles from './devSwiper.module.css'
 import { register } from 'swiper/element/bundle'
 import Image from 'next/image'
 import { useEffect, useState, useRef } from 'react'
+import { GrLinkNext, GrLinkPrevious } from 'react-icons/gr'
 
 const SwiperControlPanel = ({ nextSlide, previousSlide, images, slideTo }) => {
   return (
     <div className={styles.sliderControlsContainer}>
-      <div className={styles.buttonStyle} onClick={() => nextSlide()}>
-        Next
-      </div>{' '}
       <div className={styles.buttonStyle} onClick={() => previousSlide()}>
-        Previous
+        <GrLinkPrevious />
       </div>
+      <div className={styles.buttonStyle} onClick={() => nextSlide()}>
+        <GrLinkNext />
+      </div>{' '}
     </div>
   )
 }
