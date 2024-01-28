@@ -1,0 +1,12 @@
+.slider {
+  width: 100%;
+  height: 100%;
+}
+
+.slider img {
+  /*  width: 300px;  */
+  width: 100%;
+  /*  height: 300px;  */
+  height: auto;
+  object-fit: contain; /* Resize the images to fill their box while preserving their aspect ratio */
+}

@@ -1,10 +1,9 @@
-import NavTopBar from '@/components/nav/navTopBar/navTopBar'
 import './globals.css'
 import { poppinsFont } from '@/utils/fonts'
-import NavBottomBar from '@/components/nav/navBottomBar/navBottomBar'
-import NavAside from '@/components/nav/navAside/navAside'
+
 import { fetchGalleries } from '@/lib/data.service'
 import { fetchAuthors } from '@/lib/data.service'
+import Navigation from '@/components/nav/navigation/navigation'
 
 export const metadata = {
   title: 'MediaCollege Denmark',
@@ -18,9 +17,8 @@ export default async function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={poppinsFont.className}>
-        <NavTopBar />
-        <NavBottomBar data={galleries} />
-        <NavAside data={authors} />
+        <Navigation galleries={galleries}></Navigation>
+
         {children}
       </body>
     </html>

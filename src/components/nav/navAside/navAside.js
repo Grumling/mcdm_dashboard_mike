@@ -1,15 +1,20 @@
 import Link from 'next/link'
 import styles from './navAside.module.css'
+import { fetchAuthorsByGalleryName } from '@/lib/data.service'
 
-const NavAside = async ({ data }) => {
+const NavAside = async ({ gallery }) => {
+  const authorsForGallery = await fetchAuthorsByGalleryName(gallery)
+
   return (
     <main className={styles.container}>
       <div className={styles.sideNav}>
         <ul>
-          {data.map((authors) => {
+          {authorsForGallery.map((authors) => {
             return (
               <li key={authors._id}>
-                <Link href='/'>{authors.author}</Link>
+                <Link href={`/${authors.gallery}/${authors.niceUrl}`}>
+                  {authors.author}
+                </Link>
               </li>
             )
           })}
