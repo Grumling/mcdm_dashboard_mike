@@ -28,8 +28,6 @@ body {
 
 body {
   background-color: var(--primary-backgorund);
-  height: 100vh;
-  /* height: calc(100vh - 60px); */
 }
 
 a {

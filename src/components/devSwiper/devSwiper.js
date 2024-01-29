@@ -73,11 +73,21 @@ const DevSwiper = ({ images }) => {
       ) : null}
 
       {/* Swiper Container */}
-      <swiper-container slides-per-view='1' keyboard='true' ref={swiperRef}>
+      <swiper-container
+        slides-per-view='1'
+        effect='fade'
+        keyboard='true'
+        pagination='true'
+        pagination-dynamic-bullets='true'
+        loop='true'
+        space-between='30'
+        ref={swiperRef}
+      >
         {images.map((image) => {
           return (
             <swiper-slide key={image._id} className={styles.slide}>
               <Image
+                lazy='true'
                 src={image.path}
                 alt={image.name}
                 width={image.width}

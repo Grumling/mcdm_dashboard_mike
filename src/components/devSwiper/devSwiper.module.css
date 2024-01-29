@@ -3,14 +3,6 @@
   height: 100%;
 }
 
-.slider img {
-  /*  width: 300px;  */
-  width: 100%;
-  /*  height: 300px;  */
-  height: auto;
-  object-fit: contain; /* Resize the images to fill their box while preserving their aspect ratio */
-}
-
 .sliderControlsContainer {
   position: relative;
   display: flex;
@@ -45,11 +37,11 @@
 .buttonStyle:nth-child(1) {
   position: absolute;
   left: 5px;
-  top: 50vh;
+  top: 35vh;
 }
 
 .buttonStyle:nth-child(2) {
   position: absolute;
   right: 5px;
-  top: 50vh;
+  top: 35vh;
 }

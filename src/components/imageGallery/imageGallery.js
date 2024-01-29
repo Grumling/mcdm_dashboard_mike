@@ -19,7 +19,7 @@ const ImageGallery = ({ images }) => {
         images.map((image) => {
           return (
             <Image
-              className={styles.imageEffect}
+              className={`${styles.imageEffect} ${styles.smallImages}`}
               key={image._id}
               src={image.path}
               width={150}
@@ -29,7 +29,7 @@ const ImageGallery = ({ images }) => {
           )
         })
       )}
-      {/* <button onClick={toggleView}>Toggle Slider</button> */}
+      <button onClick={toggleView}>Toggle Slider</button>
     </section>
   )
 }
